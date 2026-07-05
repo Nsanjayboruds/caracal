@@ -42,7 +42,7 @@
   "scripts": {
     "sync-embedded": "node scripts/build-embedded.mjs",
     "prebuild": "node scripts/build-embedded.mjs",
-    "build": "tsc",
+    "build": "node init && tsc",
     "pretypecheck": "node scripts/build-embedded.mjs",
     "typecheck": "tsc --noEmit",
     "pretest": "node scripts/build-embedded.mjs",

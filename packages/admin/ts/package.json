@@ -34,7 +34,7 @@
   "scripts": {
     "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\"",
     "prebuild": "pnpm run clean",
-    "build": "tsc",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --root ../../.. tests/typescript/unit/admin",
     "prepublishOnly": "pnpm run clean && tsc"

@@ -8,7 +8,7 @@
     "node": ">=22"
   },
   "scripts": {
-    "start": "node server.mjs",
+    "start": "node init && node server.mjs",
     "test": "node --test"
   }
 }

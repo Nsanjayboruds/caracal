@@ -33,7 +33,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --root ../../.. tests/typescript/unit/sdk/oauth",
     "prepublishOnly": "tsc"

@@ -22,8 +22,6 @@ coverage.xml
 .nyc_output/
 
 # Environment files
-.env
-.env.*
 !.env.example
 !.env.*.example
 infra/docker/local.env
@@ -35,7 +33,6 @@ infra/docker/local.env
 Thumbs.db
 .Trash-*/
 .idea/
-.vscode/
 *.swp
 *.swo
 *~
@@ -110,3 +107,4 @@ apps/web/src/routeTree.gen.ts
 
 # Control plane runtime gate state (dev stack)
 infra/docker/control/
+config.bat

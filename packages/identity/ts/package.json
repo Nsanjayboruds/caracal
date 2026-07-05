@@ -33,8 +33,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "node init && tsc",
+    "dev": "node init && tsc --watch",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --root ../../.. tests/typescript/unit/identity",
     "prepublishOnly": "tsc"

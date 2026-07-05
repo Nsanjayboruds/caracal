@@ -35,7 +35,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "typecheck": "tsc --noEmit",
     "test": "pnpm --dir ../../../verify/ts build && vitest run --root ../../../.. tests/typescript/unit/adapters/fastmcp",
     "prepublishOnly": "tsc"
